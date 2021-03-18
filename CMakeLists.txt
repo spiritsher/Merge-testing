@@ -10,6 +10,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 # to the source code
 configure_file(TutorialConfig.h.in TutorialConfig.h)
 
+# add the MathFunctions library
+add_subdirectory(MathFunctions)
+
+
 # add the executable
 # add space line
 add_executable(Tutorial tutorial.cxx)
